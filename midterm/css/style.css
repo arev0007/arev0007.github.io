@@ -1,4 +1,4 @@
-/* apply box-sizing for all elements */
+/*apply box-sizing for all elements*/
 html{
         box-sizing: border-box;
   }
@@ -110,7 +110,8 @@ nav ul li a{
 /* sets the text boxes*/
 input[type='text']{
         width: 100%;
-        border-style: ridge #fff;
+        border-style: ridge;
+        border: #fff;
         margin: 2px 0;    
     }
 /* add space*/
@@ -121,7 +122,8 @@ input[type='submit']{
 textarea{
         width: 100%;
         font-size: 16px;
-        border-style: ridge #fff;
+        border-style: ridge;
+        border: #fff;
 }
 /* sets the style of the footer*/
 footer{
