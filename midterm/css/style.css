@@ -1,0 +1,133 @@
+/* apply box-sizing for all elements */
+html{
+        box-sizing: border-box;
+  }
+*,
+*:before,
+*:after{
+        box-sizing: inherit;
+  }
+/* sets the main content styles */
+body{
+        background-color: #aad4cf;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+/* sets the structure of the content */
+.wrapper{
+        width: 600px;
+        margin: 0 auto;
+        background-color:#e0f1f0;
+}
+
+/* Apply the same padding for the elements below the header */
+.container{
+        padding: 10px 10px 40px 10px;    
+}
+/* sets the header position */
+header {
+        position: relative;
+}
+/* header content- sets the width of the image */
+header img{
+        width:100%;
+}
+/* sets the style and position of the heading */
+h1{
+        font-size: 3rem;
+        color: white;
+        position:absolute;
+        bottom:0;
+        right:150px;
+}
+/* sets the unordered list to style the navigation bar */
+nav ul{
+        list-style-type: none;
+        width:100%;
+        height:40px;   
+        margin-top:0;
+        padding-left:0px;  
+}
+/* provide layout and style to the navigation bar */
+nav ul li{
+        display:block;
+        float:left;
+        text-transform: uppercase;
+        border-right: 1px solid #000;
+        width: 33.3%;   
+}
+/* remove border */
+nav ul li:last-child{
+        border-right: none;
+}
+/* style the navigation bar items*/
+nav ul li a{
+        display:inline-block;
+        color: black;
+        text-align:center;
+        text-decoration: none;
+        font-weight: bold;
+        padding-left: 60px;  
+}
+
+/* sets the article image*/
+.element > img{
+        width:200px;
+        height:200px;
+        float:left;
+        padding-right:10px;
+        padding-top:10px;
+        padding-bottom:5px;
+}
+
+/* reduce space */
+.element > h2{
+        margin-bottom: 0;
+}
+/* 10px x 1.125em = 11.25px  */
+.element > p {
+
+        text-align: justify;
+        font-size:11.25px;
+}
+/* sets the style to the article text*/
+.description{
+        padding-left:20px;
+        font-size: 0.6875em;
+}
+/* sets space to the heading3*/
+.list > h3{
+        margin-bottom:0;
+}
+/* sets style of the contact section*/
+.form-contact{
+        border: 1px solid #000;
+        width:100%;
+        height: 50%;
+        padding:10px;
+        font-size: 0.75em;
+}
+/* sets the text boxes*/
+input[type='text']{
+        width: 100%;
+        border-style: ridge #fff;
+        margin: 2px 0;    
+    }
+/* add space*/
+input[type='submit']{
+        margin: 5px 0;
+}
+/* sets the message box*/
+textarea{
+        width: 100%;
+        font-size: 16px;
+        border-style: ridge #fff;
+}
+/* sets the style of the footer*/
+footer{
+        float: right;
+        padding: 10px;
+        text-align: center;
+        font-size: 0.625em;
+}
+
