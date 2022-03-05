@@ -110,8 +110,7 @@ nav ul li a{
 /* sets the text boxes*/
 input[type='text']{
         width: 100%;
-        border-style: ridge;
-        border: #fff;
+        border: 1px solid rgb(218, 215, 215);
         margin: 2px 0;    
     }
 /* add space*/
@@ -122,8 +121,7 @@ input[type='submit']{
 textarea{
         width: 100%;
         font-size: 16px;
-        border-style: ridge;
-        border: #fff;
+        border: 1px solid rgb(218, 215, 215);
 }
 /* sets the style of the footer*/
 footer{
