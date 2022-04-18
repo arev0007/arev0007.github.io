@@ -1,72 +1,649 @@
 *{
     box-sizing: border-box;
 }
+
+/* Main colour and font family are added for the whole website */
 body{ 
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
+/* the container should have a specific max-width*/
+.container{
+    max-width: 1200px;
+    font-size: 16px;
+     
+}
+/* colour and space are added for the header*/
 header{
-    background-color:#222;  
-   
+    background-color:#222;
+    padding:5px;
+    width: 100%;
+    height:1090px;
+}
+/* the id navbar has margin for showing better structure */
+#navbar{
+    margin:20px;
 }
 
+/* The logo is positioned on the left side */
 .navbar img{
     float:left;
 }
-
+/* remove the dots of the list and determine the size*/
 ul{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
-
+/* The navbar items are aligned to the center*/
 li{
     text-align: center;
 }
+/* specify fundamental styles for the nav items */
 a{
     color:#c78c06;
     text-decoration: none;
-    font-size: 18px;
     display: block;
     text-align: center;
     padding: 15px 20px;
     text-decoration: none; 
 }
 
-#navbar .active{ /* apply overlap to the header*/ 
+/* Add background colour and change the colour of the first nav item/*/
+#navbar .active{
     background-color: #c78c06;
-    color:#222
-    
+    color:#222;
+    position: relative;
+    bottom: 20px;
 }
 
+/* Add background-color to the logo for specific requirements*/
+.logo-img{
+    background-color: #c78c06;
+}
+
+/* Add specific margins to the search bar for designing a better structure*/
 .search-bar{
-    float: auto;
-    
+    margin-bottom:15px;
+    margin-left:20px;
+    margin-right:15px;
 }
-
+/* Apply style to the search bar*/
 .search-bar input[type=text]{
-    padding: 14px;
+    padding: 15px;
     font-size: 15px;
     border-style: ridge;
     border: 2px solid #222;
     border-radius: 5px;
-    width: 80%;
-    margin: 20px 15px;
-  
+    width: 85%;
 }
- 
-#navbar button{
-    float: right;
-    padding: 14px;
-    margin-top: 20px;
-    margin-right: 15px;
+ /* Add specific colours to the search nav icon */
+.search-bar button{  
     background: #222;
-   
-   
+    border:3px solid #c78c06;   
 }
 
+/* Apply specific colours, font size, and space to the search bar icon*/
 .fa-search{
     color:#c78c06;
     background: #222;
- 
-   
+    font-size:25px;
+    padding:5px 6px 10px 6px;  
+}
+/* Apply a size for the image of the banner */
+.banner-img img{
+    width:100%;
+    height:595px;
+}
+/* Use rgb to add opacity to the background. Use position relative to adapt the information above the banner image */
+.banner-info{
+   background-color: rgb(75, 69, 69,0.6);
+   width: 100%;
+   height:300x;
+   padding: 40px 0px 40px 0px;
+   position: relative;
+   bottom: 550px;
+}
+/* Change the colour of the title and text*/
+.banner-info h1,p{
+   color: white;
+}
+/*Add font-size to the title of the banner*/
+.banner-info h1{
+   font-size: 3rem;
+}
+/* Specify the size of the banner button*/
+.button1{
+    color: #222;
+    background-color:  #c78c06; 
+	font-size: 1.25em;
+	font-weight: normal;
+	padding: 40px 90px 40px 70px;
+	max-width:600px;
+	height: 120px;
+    border-style: none;
+}
+/*Specify the position of the icon */
+.banner-info .fa-play{
+    font-size: 30px;
+    position:absolute;
+    padding-bottom: 5px;
+    bottom:80px;
+    left: 240px;
+}
+/*Specify the background of the wrapper*/
+.wrapper{
+    background-color: white;
+    float:left;
+    display:flex;
+    flex-direction: column;
+}
+/* Add specific background to the about section*/
+.about{
+    background-color: #ffe6ac;
+    width:100%;
+}
+/* Add specific size to the image placed in the "about" section*/
+.about-img img{
+    width:100%;
+    height:auto;
+    margin: 0;
+    position: relative;
+    padding:10px;
+    margin-right:0;
+}
+/* Specify the content size  */
+.about-info{
+    display:inline-block;
+    text-align:justify ;
+    padding: 10px; 
+}
+
+/* Add a specific items to the title in about section*/
+.about-info h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+/* Add specific size to the image placed in the "about" box*/
+.about-info p{
+    color:#222;
+}
+/* Creates display flex to the service container to organize the boxes */
+.service{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+}
+/* modify the size and weight of the headline*/
+.service h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 10px;
+}
+/* Add a specific background-color to the digital section*/
+.digital{
+    background-color: #ffe6ac;
+}
+/* Add a specific size to the image placed in digital section*/
+.digital-img img{
+    width:100%;
+    height:auto;
+}
+/* Adapt the digital content using display:inline-block as well as text-align */
+.digital-info{
+   padding:20px;
+   display:inline-block;
+   text-align:justify;
+}
+/* Add specific style to the headline3*/
+.digital-info h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:5px;
+    margin-bottom: 0;
+}
+/* Adapt the text changing the colour*/
+.digital-info p{
+    color:#222;
+}
+/* Specify the size of the digital button*/
+.button2{
+    color: white;
+    background-color: #222; 
+	font-size: 1.25em;
+	font-weight: normal;
+	padding:30px 100px 30px 100px;
+    border-style:none;
+  
+}
+/* Set the icon of the button2*/
+.digital-info .fa-play{
+    color:white;
+    font-size: 25px;
+    position:relative;
+    top:8px;
+    right:100px;
+    padding:5px;   
+}
+/*Add a specific backgrounf-color to the marketing section container*/
+.marketing{
+    background-color: #ffe6ac;
+    margin-top: 10px;
+    padding:20px;
+}
+/* Add a specific size to the image placed in marketing section*/
+.marketing-img img{
+    width:100%;
+    height:auto;
+}
+/* Adapt the marketing content using display:inline-block as well as text-align */
+.marketing-info{
+   padding:20px;
+   display:inline-block;
+   text-align:justify;
+}
+/* Add specific style to the headline3*/
+.marketing-info h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:5px;
+    margin-bottom: 0;
+}
+/* Adapt the text changing the colour*/
+.marketing-info p{
+    color:#222;
+}
+/* Specify the size of the marketing button*/
+.button3{
+    color: white;
+    background-color: #222; 
+	font-size: 1.25em;
+	font-weight: normal;
+	padding: 30px 100px 30px 100px;
+	max-width:600px;
+    border-style: none;
+}
+/* Set the icon of the button3*/
+.marketing-info .fa-play{
+    color:white;
+    font-size: 25px;
+    position:relative;
+    top:8px;
+    right:100px;
+    padding:5px; 
+}
+/*Add a specific backgrounf-color to the video production section container*/
+.video{
+    background-color: #ffe6ac;
+    margin-top: 10px;
+    padding:20px;
+    width: 100%;
+}
+/* Add a specific size to the image placed in video production section*/
+.video-img img{
+    width:100%;
+    height:auto;
+}
+/* Adapt the video production content using display:inline-block as well as text-align */
+.video-info{
+   padding:20px;
+   display:inline-block;
+   text-align:justify;
+}
+/* Add specific style to the headline3*/
+.video-info h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:5px;
+    margin-bottom: 0;
+}
+/* Adapt the text changing the colour*/
+.video-info p{
+    color:#222;
+}
+/* Specify the size of the video button*/
+.button4{
+    color: white;
+    background-color: #222; 
+	font-size: 1.25em;
+	font-weight: normal;
+	padding: 30px 100px 30px 100px;
+	max-width:600px;
+    border-style: none;
+}
+/* Set the icon of the button4*/
+.video-info .fa-play{
+    color:#fff;
+    font-size: 30px;
+    position:relative;
+    top:10px;
+    right:100px;
+    padding:5px; 
+}
+
+/*Add a specific backgrounf-color to the web development section container*/
+.web-dev{
+    background-color: #ffe6ac;
+    margin-top: 10px;
+    padding:20px;
+    width: 100%;
+}
+/* Add a specific size to the image placed in web development section*/
+.web-dev-img img{
+    width:100%;
+    height:auto;
+}
+/* Adapt the web development content using display:inline-block as well as text-align */
+.web-dev-info{
+   padding:20px;
+   display:inline-block;
+   text-align:justify;
+}
+/* Add specific style to the headline3*/
+.web-dev-info h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:5px;
+    margin-bottom: 0;
+}
+/* Adapt the text changing the colour*/
+.web-dev-info p{
+    color:#222;
+}
+/* Specify the size of the web development button*/
+.button5{
+    color: white;
+    background-color: #222; 
+	font-size: 1.25em;
+	font-weight: normal;
+	padding: 30px 100px 30px 100px;
+	max-width:600px;
+    border-style: none;
+}
+/* Set the icon of the button5*/
+.web-dev-info .fa-play{
+    color:#fff;
+    font-size: 30px;
+    position:relative;
+    top:10px;
+    right:100px;
+    padding:5px; 
+}
+/*Add a specific backgrounf-color to the print section container*/
+.print{
+    background-color: #ffe6ac;
+    margin-top: 10px;
+    padding:20px;
+    width: 100%;
+}
+/* Add a specific size to the image placed in print section*/
+.print-img img{
+    width:100%;
+    height:auto;
+}
+/* Adapt the print content using display:inline-block as well as text-align */
+.print-info{
+    padding:20px;
+   display:inline-block;
+   text-align:justify;
+}
+/* Add specific style to the headline3*/
+.print-info h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:5px;
+    margin-bottom: 0;
+}
+/* Adapt the text changing the colour*/
+.print-info p{
+    color:#222;
+}
+/* Specify the size of the print button*/
+.button6{
+    color: #fff;
+    background-color: #222; 
+	font-size: 1.25em;
+	font-weight: normal;
+	padding: 30px 100px 30px 100px;
+	max-width:600px;
+    border-style: none;
+}
+/* Set the icon of the button6*/
+.print-info .fa-play{
+    color:#fff;
+    font-size: 30px;
+    position:relative;
+    top:10px;
+    right:100px;
+    padding:5px; 
+}
+/* Separate vision section*/
+.vision{
+    width:100%;
+    height:300px;
+    margin-top: 10px;
+}
+/* Add a specific size to the image placed in vision section*/
+.vision-img img{
+    width:100%;
+    height:auto;
+}
+/* Adapt the vision content positioning above the image that works as a background  */
+.vision-info{
+    padding:20px;
+    position:relative;
+    bottom:340px;
+ }
+/* Add specific style to the headline3*/
+ .vision-info h3{
+     color: #fff;
+     font-size: 30px;
+    font-weight: bold;
+    margin-left:5px;
+    margin-bottom: 0;
+ }
+
+/* Specify the size of the vision button*/
+.button7{
+    color: white;
+    border: 2px solid #c78c06;
+    background-color: #222; 
+	font-size: 1.25em;
+	font-weight: normal;
+	padding: 30px 60px 30px 60px;
+	max-width:600px;
+}
+/* Set the icon of the button7*/
+.vision-info .fa-play{
+    color:#fff;
+    font-size: 25px;
+    position:relative;
+    top:6px;
+    right:50px;
+    padding:5px; 
+}
+/* Add margin for the team section*/
+.team{
+    margin-top:20px;
+}
+/* Add specific style to the headline2*/
+.team h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding:60px 20px 10px 20px;
+    padding-top: 10px;
+}
+/* Apply a specific buckground to the team1*/
+.team1{
+    width:100%;
+    background-color:#ffe6ac;
+}
+/* Add a specific size to the image placed in team1 section*/
+.team1-img img{
+    width:100%;
+    height:auto;
+}
+/* Add space to the container of the team1 content */
+.team1-info{
+    padding:10px;
+}
+/* Add specific style to the headline2*/
+.team1-info h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+/* Add specific style to the headline3*/
+.team1-info h3{
+    font-weight: bold;
+    margin-top: 0;
+}
+/* Add colour to the horizontal line*/
+.line1{
+    border: 1px solid #c78c06;
+}
+/* Add colour to the text of the team1*/
+.team1-info p{
+    color: #222;
+}
+/* Apply a specific buckground to the team2*/
+.team2{
+    width:100%;
+    background-color:#ffe6ac;
+    margin-top: 10px;
+}
+/* Add a specific size to the image placed in team2 section*/
+.team2-img img{
+    width:100%;
+    height:auto;
+}
+/* Add space to the container of the team2 content */
+.team2-info{
+    padding:10px;
+}
+/* Add specific style to the headline2*/
+.team2-info h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+/* Add specific style to the headline3*/
+.team2-info h3{
+    font-weight: bold;
+    margin-top: 0;
+}
+/* Add colour to the horizontal line*/
+.line2{
+    border: 1px solid #c78c06;
+}
+/* Add colour to the text of the team2*/
+.team2-info p{
+    color: #222;
+}
+/* Add size to the contact section*/
+.contact{
+    width: 100%;
+}
+/* Add specific style to the headline2*/
+.contact h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding:10px;
+    padding-top: 10px;
+}
+/* Apply a specific size to the contact container*/
+.message, .operation{
+    width:480px;
+    height:auto;
+    padding:10px;
+    margin-top: 0;
+    margin-left:5px;
+}
+.message h3{
+    font-size: 24px;
+}
+/* sets the text boxes*/
+input[type='text'], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #222;
+    border-style: groove;
+    margin: 5px 0;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;  
+}
+/* add colour to the submit button */
+input[type='submit']{
+        font-size: 20px;
+        margin: 5px 0;
+        background-color: #222;
+        color: #c78c06;
+}
+/* sets the message box*/
+textarea{
+        width: 100%;
+        height: 120px;
+        font-size: 16px;
+        border: 1px solid #222;
+}
+/* Add specific style to the headline3*/
+.operation h3{
+    font-size: 24px;
+}
+/* Apply border-collapse to create the table */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0;
+}
+/* Apply border style to the table */
+table, td, th{
+    border: 1px solid #222;
+}
+/* Apply background-color, space, and align the content item */
+th{
+    text-align: center;
+    padding:10px 20px;
+    background-color: #ffe6ac;
+}
+/* Apply space, and align the content item */
+ td{
+    text-align: left;
+    padding:10px 20px;
+}
+/* Apply style to the location container */
+.location{
+    width: 100%;
+    padding:20px 30px 20px 10px;
+    margin-right:5px;
+}
+/* Add specific style to the headline3*/
+.location h3{
+    font-size: 24px;
+}
+/* Apply a specific size to the visual map, and remove the border. */
+.location iframe{
+    width:480px;
+    height:350px;
+    border-style: none;
+}
+/* Set the size, background colour, and space for the footer section */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #222;
+    padding:30px 40px;
+}
+/* Apply size and color to the text of the footer*/
+p{
+    font-size: 12px;
+    color: #c78c06;
 }
