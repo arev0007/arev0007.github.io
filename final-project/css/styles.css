@@ -11,6 +11,7 @@ body{
 /* the container should have a specific max-width*/
 .container{
     max-width: 1200px;
+    margin: 0 auto;
     font-size: 16px;
      
 }
@@ -94,32 +95,30 @@ a{
 }
 /* Apply a size for the image of the banner */
 .banner-img img{
-    width:100%;
     height:595px;
 }
 /* Use rgb to add opacity to the background. Use position relative to adapt the information above the banner image */
 .banner-info{
    background-color: rgb(75, 69, 69,0.6);
-   width: 100%;
-   height:300x;
    padding: 40px 0px 40px 0px;
    position: relative;
    bottom: 550px;
+   
 }
 /* Change the colour of the title and text*/
 .banner-info h1,p{
-   color: white;
+    color: white;
 }
 /*Add font-size to the title of the banner*/
 .banner-info h1{
-   font-size: 3rem;
+    font-size: 3rem;
 }
 /* Specify the size of the banner button*/
 .button1{
-    color: #222;
-    background-color:  #c78c06; 
+    color:#222;
+    background-color:#c78c06; 
 	font-size: 1.25em;
-	font-weight: normal;
+	font-weight:normal;
 	padding: 40px 90px 40px 70px;
 	max-width:600px;
 	height: 120px;
@@ -127,18 +126,13 @@ a{
 }
 /*Specify the position of the icon */
 .banner-info .fa-play{
-    font-size: 30px;
-    position:absolute;
-    padding-bottom: 5px;
-    bottom:80px;
-    left: 240px;
+    font-size:30px;
+    padding:10px;
 }
 /*Specify the background of the wrapper*/
 .wrapper{
     background-color: white;
-    float:left;
-    display:flex;
-    flex-direction: column;
+    
 }
 /* Add specific background to the about section*/
 .about{
@@ -188,6 +182,7 @@ a{
 /* Add a specific background-color to the digital section*/
 .digital{
     background-color: #ffe6ac;
+    margin-bottom:10px;
 }
 /* Add a specific size to the image placed in digital section*/
 .digital-img img{
@@ -224,28 +219,23 @@ a{
 /* Set the icon of the button2*/
 .digital-info .fa-play{
     color:white;
-    font-size: 25px;
-    position:relative;
-    top:8px;
-    right:100px;
-    padding:5px;   
+    font-size:25px;
+    padding:10px;   
 }
 /*Add a specific backgrounf-color to the marketing section container*/
 .marketing{
     background-color: #ffe6ac;
-    margin-top: 10px;
-    padding:20px;
 }
 /* Add a specific size to the image placed in marketing section*/
 .marketing-img img{
-    width:100%;
+    width: 100%;
     height:auto;
 }
 /* Adapt the marketing content using display:inline-block as well as text-align */
 .marketing-info{
-   padding:20px;
-   display:inline-block;
-   text-align:justify;
+    padding:20px;
+    display:inline-block;
+    text-align:justify;
 }
 /* Add specific style to the headline3*/
 .marketing-info h3{
@@ -272,17 +262,12 @@ a{
 .marketing-info .fa-play{
     color:white;
     font-size: 25px;
-    position:relative;
-    top:8px;
-    right:100px;
-    padding:5px; 
+    padding:10px; 
 }
 /*Add a specific backgrounf-color to the video production section container*/
 .video{
     background-color: #ffe6ac;
-    margin-top: 10px;
-    padding:20px;
-    width: 100%;
+    margin-bottom: 10px;
 }
 /* Add a specific size to the image placed in video production section*/
 .video-img img{
@@ -291,9 +276,9 @@ a{
 }
 /* Adapt the video production content using display:inline-block as well as text-align */
 .video-info{
-   padding:20px;
-   display:inline-block;
-   text-align:justify;
+    padding:20px;
+    display:inline-block;
+    text-align:justify;
 }
 /* Add specific style to the headline3*/
 .video-info h3{
@@ -320,18 +305,13 @@ a{
 .video-info .fa-play{
     color:#fff;
     font-size: 30px;
-    position:relative;
-    top:10px;
-    right:100px;
-    padding:5px; 
+    padding:10px; 
 }
 
 /*Add a specific backgrounf-color to the web development section container*/
 .web-dev{
     background-color: #ffe6ac;
-    margin-top: 10px;
-    padding:20px;
-    width: 100%;
+    margin-bottom: 10px;
 }
 /* Add a specific size to the image placed in web development section*/
 .web-dev-img img{
@@ -368,18 +348,13 @@ a{
 /* Set the icon of the button5*/
 .web-dev-info .fa-play{
     color:#fff;
-    font-size: 30px;
-    position:relative;
-    top:10px;
-    right:100px;
-    padding:5px; 
+    font-size:30px;
+    padding:10px; 
 }
 /*Add a specific backgrounf-color to the print section container*/
 .print{
     background-color: #ffe6ac;
-    margin-top: 10px;
-    padding:20px;
-    width: 100%;
+    margin-bottom:10px;
 }
 /* Add a specific size to the image placed in print section*/
 .print-img img{
@@ -417,10 +392,7 @@ a{
 .print-info .fa-play{
     color:#fff;
     font-size: 30px;
-    position:relative;
-    top:10px;
-    right:100px;
-    padding:5px; 
+    padding:10px; 
 }
 /* Separate vision section*/
 .vision{
@@ -441,8 +413,8 @@ a{
  }
 /* Add specific style to the headline3*/
  .vision-info h3{
-     color: #fff;
-     font-size: 30px;
+    color: #fff;
+    font-size: 30px;
     font-weight: bold;
     margin-left:5px;
     margin-bottom: 0;
@@ -455,17 +427,14 @@ a{
     background-color: #222; 
 	font-size: 1.25em;
 	font-weight: normal;
-	padding: 30px 60px 30px 60px;
+	padding: 20px 30px;
 	max-width:600px;
 }
 /* Set the icon of the button7*/
 .vision-info .fa-play{
     color:#fff;
     font-size: 25px;
-    position:relative;
-    top:6px;
-    right:50px;
-    padding:5px; 
+    padding:10px; 
 }
 /* Add margin for the team section*/
 .team{
@@ -643,7 +612,229 @@ footer{
     padding:30px 40px;
 }
 /* Apply size and color to the text of the footer*/
-p{
+footer p{
     font-size: 12px;
     color: #c78c06;
+}
+
+@media screen and (min-width: 760px){
+    
+    /* Add a specific background-color to the logo */
+    .logo-img{
+        background-color: #222;
+    }
+    /* Size the navbar */
+    .menu{
+        /* width:80%; */
+        height:150px;
+        margin-left:30px;
+        margin-right:30px;
+        padding-left:40px;
+        padding-right:30px;    
+    }
+    /* Reduce the size of the logo */
+    .logo-img img{
+        padding: 8px;
+    }
+    /* creates an horizontal navbar */
+    nav {
+        position:relative;
+        left:150px;
+        bottom:70px;
+        z-index:2;
+    }
+    /* Adjust the navbar items */
+    nav li{
+        display: inline-block;
+        text-align: center;
+    }
+    /* Adjust the active item */
+    #navbar .active{
+        background-color: #c78c06;
+        color:#222;
+        position: relative;
+        bottom:5px;
+    }
+    /* Adjust the form to be positioned at the top right side */
+    .search-bar form{
+        position:relative;
+        bottom:150px;
+        left:70%;
+        width:50%;
+        padding-left:30px;
+    }
+    /* Adjust the input of the search bar*/
+    .search-bar input[type=text]{
+        width:40%;
+    }
+    /* Adjust the banner-info class to positionate the content in the middle of the block */
+    .banner-info{
+        width:80%;
+        background-color: rgb(75, 69, 69,0.8);
+        position:relative;
+        bottom:780px;
+        left:110px;
+        padding:30px;
+    }
+    /* Adjust the banner image*/
+    .banner-img img{
+        width:100%;
+        height:auto;
+    }
+    /*Specify the position of the icon */
+    .banner-info .fa-play{
+        font-size: 30px;
+        padding:10px;
+    }
+    /* About section is re-positioned. The content is also specifically adapted */
+    .about{
+        height:350px;
+        position:relative;
+        bottom:300px;
+        padding:25px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Adjust about image */
+    .about-img{
+        margin-left:20px;
+    }
+    /* Adjust the the size of the image placed in about section */
+    .about-img img, .about-info{
+        width:500px;
+        height:320px;
+    }
+    /* Adjust text*/
+    .about-info p{
+        padding-top: 10px;
+    }
+    /* Adjust service section */
+    .service{
+        width: 100%;
+        height: auto;
+        position:relative;
+        bottom:270px; 
+    }
+    /* create a grid for services section */
+    .block-serv{
+        /* width: 600px; */
+        display:grid;
+        grid-template-columns:repeat(6, 1fr);
+        grid-template-areas:
+        "serv-hdr serv-hdr serv-hdr serv-hdr serv-hdr serv-hdr"
+        "digital digital digital marketing marketing marketing"
+        "video video web web print print";
+        grid-gap:5px;
+        margin-left: 0;
+        margin-bottom: 0; 
+    }
+    .block-serv h2{
+        grid-area: serv-hdr;
+    }
+    .block-serv .digital{
+        grid-area: digital;
+    }
+    .block-serv .marketing{
+        grid-area: marketing;
+    }
+    .block-serv .video{
+        grid-area: video;
+    }
+    .block-serv .web-dev{
+        grid-area: web;
+    }
+    .block-serv .print{
+        grid-area: print;
+    } 
+
+    /* Adjust buttons*/
+    .button4, .button5, .button6{
+        color: white;
+        background-color: #222; 
+        font-size: 1.25em;
+        font-weight: normal;
+        padding: 30px 50px 30px 50px;
+        max-width:600px;
+        border-style: none;
+    }
+    
+    /* Adjust vision section */
+    .vision{
+        position:relative;
+        bottom:275px;
+    }
+    /* Apply a specific size */
+    .vision-img img{
+        width: 100%;
+        height: 400px
+    }
+    /* Add space to style content */
+    .vision-info{
+        padding-left:40px;
+        padding-right:40px;
+    }
+
+    /* Adjust team section */
+    .team{
+        position: relative;
+        bottom: 200px;
+        background-color: #ffe6ac;   
+    }
+      /* Apply a specific style to the team section */
+    .team1,.team2{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team1 .team1-img:nth-of-type(1){
+        grid-column: 2 ;
+    }
+    .team1 .team1-info:nth-of-type(2){
+        grid-column:1;
+    }
+    .team2 .team2-info:nth-of-type(3){
+        grid-column: 1;
+    }
+    .team2 .team2-img:nth-of-type(4){
+        grid-column:2;
+    }
+    /* Apply a specific style to the contact section */
+    .contact{
+        position:relative;
+        bottom:200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(3, 1fr); */
+        grid-template-areas:
+        "  block1 block1 "
+        " block2 block3 "
+        " block4 block4 ";
+    }
+    
+    .contact h2:nth-of-type(1){
+        grid-area: block1;
+    }
+    .contact .message:nth-of-type(2){
+        grid-area: block2;
+    }
+    .contact .location:nth-of-type(3){
+        grid-area: block3;
+    }
+    .contact .operation:nth-of-type(4){
+        grid-area: block4;
+    }
+
+    /* Apply a specific style to the footer */
+    footer{
+        width: 100%;
+        height:100px;;
+        padding-left:30px;
+        padding-right:30px;
+        text-align: left;
+    
+    }
+    footer p{
+        margin-left:50px;
+    }
+
 }
